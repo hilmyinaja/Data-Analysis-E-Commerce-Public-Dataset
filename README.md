@@ -45,6 +45,16 @@ Membuat visualisasi Bar Chart untuk melihat kategori produk terburuk, serta Hist
 ### Analisis Lanjutan: RFM (Recency, Frequency, Monetary)
 Melakukan segmentasi pelanggan untuk mengidentifikasi siapa pelanggan yang paling baru berbelanja (Recency), paling sering berbelanja (Frequency), dan menghabiskan uang paling banyak (Monetary).
 
-## Kesimpulan
-- **Kesimpulan Pertanyaan 1:** Kategori produk security_and_services, diapers_and_hygiene, dan office_furniture memiliki skor ulasan terendah. Tim operasional perlu melakukan inspeksi kualitas pada kategori ini karena tingkat ketidakpuasan pelanggan cukup tinggi.
-- **Kesimpulan Pertanyaan 2:** Performa logistik tergolong sangat baik dengan rata-rata waktu pengiriman **11,6 Hari**. Hanya sekitar **6,77%** pesanan yang mengalami keterlambatan dari estimasi awal, menunjukkan sistem penentuan estimasi waktu sudah berjalan efektif.
+## Kesimpulan dan Rekomendasi
+
+**1. Kategori produk apa yang memiliki rata-rata skor ulasan terendah selama periode 2017-2018?**
+* **Kesimpulan:** Berdasarkan analisis ulasan, kategori security_and_services mencetak skor terendah (rata-rata 2.50), diikuti oleh diapers_and_hygiene (3.25), dan office_furniture (3.49). Kategori perabotan kantor sangat kritis karena memiliki volume ulasan yang masif (1.687 ulasan).
+* **Rekomendasi:** Tim Quality Control (QC) harus segera melakukan audit menyeluruh terhadap vendor yang mensuplai kategori office_furniture. Mengingat dimensinya yang besar, disarankan untuk mengevaluasi prosedur packing untuk mengurangi potensi kerusakan barang saat pengiriman yang memicu kekecewaan pelanggan.
+
+**2. Bagaimana performa logistik (waktu pengiriman dan keterlambatan) pada tahun 2018?**
+* **Kesimpulan:** Secara keseluruhan, rata-rata waktu pengiriman dari pembayaran hingga tiba di tangan pelanggan adalah 11,64 hari. Sistem logistik tergolong andal dengan hanya 6,77% pesanan yang melampaui batas estimasi pengiriman.
+* **Rekomendasi:** Perusahaan sebaiknya mempertahankan algoritma penentuan batas waktu estimasi saat ini karena berhasil membuat mayoritas pelanggan menerima barang lebih cepat. Untuk menekan angka 6,77% keterlambatan, tim logistik bisa memprioritaskan rute ekspedisi pada rute-rute long-tail yang sering memakan waktu di atas 30 hari.
+
+**3. Bagaimana segmentasi pelanggan berdasarkan RFM di tahun 2018?**
+* **Kesimpulan:** Analisis RFM menunjukkan ketimpangan yang signifikan pada Prinsip Pareto. Mayoritas pelanggan hanya melakukan 1 kali transaksi, namun terdapat segelintir pelanggan loyal (seperti ID awalan 8d50f5...) yang bertransaksi hingga lebih dari 20 kali, serta "Whales" yang menyumbang pendapatan di atas 100.000 BRL.
+* **Rekomendasi:** Fokus tim Marketing harus digeser dari Customer Acquisition menjadi Customer Retention dengan membuat program Loyalty/VIP Tier eksklusif bagi pelanggan dengan nilai Monetary dan Frequency tinggi untuk memastikan mereka tidak beralih ke kompetitor.
