@@ -57,7 +57,7 @@ main_df = all_df[(all_df["order_purchase_timestamp"].dt.date >= start_date) &
                  (all_df["order_purchase_timestamp"].dt.date <= end_date)]
 
 # Main Dashboard
-st.title('E-Commerce Analysis Dashboard ✨')
+st.title('E-Commerce Analysis Dashboard')
 st.caption(f"Analisis Periode: {start_date} hingga {end_date}")
 
 # Revenue dan Order
